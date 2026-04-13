@@ -64,6 +64,7 @@ impl MapMatrix {
                 self.set(x_pos, y_pos, choice);
             }
         }
+        /*
         for y_pos in 1..self.height - 1 {
             self.set(1, y_pos, MapObject::Boulder(Boulder { x: 0, y: 0 }));
             self.set(2, y_pos, MapObject::Empty);
@@ -71,6 +72,7 @@ impl MapMatrix {
             self.set(4, y_pos, MapObject::Empty);
             self.set(5, y_pos, MapObject::Empty);
         }
+        */
         self.set(self.width / 2, self.height / 2, MapObject::Player);
     }
 
