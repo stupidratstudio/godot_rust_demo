@@ -27,3 +27,7 @@ shadow_enabled = true
 multimesh = SubResource("MultiMesh_ppyta")
 
 [node name="Player" type="Player" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

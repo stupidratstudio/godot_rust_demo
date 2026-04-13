@@ -1,0 +1,3 @@
+[submodule "godot-utils"]
+	path = godot-utils
+	url = git@github.com:stupidratstudio/godot-utils.git

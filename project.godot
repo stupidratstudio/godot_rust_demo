@@ -14,3 +14,7 @@ config/name="rust_godot_test"
 run/main_scene="uid://i2dasyofwryo"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/vsync/vsync_mode=0

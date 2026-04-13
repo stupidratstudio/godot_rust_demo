@@ -14,3 +14,4 @@ func _process(delta: float) -> void:
 	if benchmark:
 		benchmark = false
 		$Player.benchmark()
+	$Label.text = "FPS:" + str(Engine.get_frames_per_second())

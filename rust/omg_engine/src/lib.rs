@@ -24,7 +24,7 @@ impl INode3D for Player {
         godot_print!("Hello, world!"); // Prints to the Godot console
 
         let mut rng = rand::rng();
-        let count = 1000;
+        let count = 100000;
         let vector: Vec<f32> = (0..count)
             .flat_map(|_| {
                 let tx = rng.random::<f32>() * 2.0 - 1.0;
