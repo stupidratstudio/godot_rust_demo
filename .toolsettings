@@ -1,0 +1,5 @@
+blender_import_folder = "./blender/another_folder/another_yet"
+blender_export_folder = "./blender_export/export_folder"
+sound_import_folder = "../assets/sounds/projects/sounds"
+sound_export_folder = "./assets/sound"
+

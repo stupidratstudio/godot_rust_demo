@@ -1,0 +1,14 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.5
+reloadable = true
+
+[libraries]
+linux.debug.x86_64 =     "res://modules/debug/lib{MODULE_NAME}.so"
+linux.release.x86_64 =   "res://modules/release/lib{MODULE_NAME}.so"
+windows.debug.x86_64 =   "res://modules/debug/{MODULE_NAME}.dll"
+windows.release.x86_64 = "res://modules/release/{MODULE_NAME}.dll"
+macos.debug =            "res://modules/debug/lib{MODULE_NAME}.dylib"
+macos.release =          "res://modules/release/lib{MODULE_NAME}.dylib"
+macos.debug.arm64 =      "res://modules/debug/lib{MODULE_NAME}.dylib"
+macos.release.arm64 =    "res://modules/release/lib{MODULE_NAME}.dylib"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://i2dasyofwryo"]
+
+[ext_resource type="Script" uid="uid://dq3rk3q7uutib" path="res://test.gd" id="1_6uqi0"]
+[ext_resource type="ArrayMesh" uid="uid://bxuxwrsu3hci7" path="res://blender_export/export_folder/torus.res" id="2_8uh7m"]
+
+[sub_resource type="Environment" id="Environment_8uh7m"]
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="MultiMesh" id="MultiMesh_ppyta"]
+transform_format = 1
+mesh = ExtResource("2_8uh7m")
+
+[node name="Test" type="Node3D"]
+script = ExtResource("1_6uqi0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.632889)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8uh7m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9207597, 0.0061627612, -0.39008155, 0.3289261, 0.5253974, 0.784707, 0.2097838, -0.85083467, 0.48173764, -4.6828213, 0, 5.6013513)
+shadow_enabled = true
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+multimesh = SubResource("MultiMesh_ppyta")
+
+[node name="Player" type="Player" parent="."]
