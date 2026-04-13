@@ -4,8 +4,8 @@ mod objects;
 use crate::map_matrix::MapMatrix;
 use std::time::Instant;
 
-const XSIZE: u8 = 140;
-const YSIZE: u8 = 50;
+const XSIZE: u8 = 200;
+const YSIZE: u8 = 60;
 
 fn clear_console() {
     //print!("\x1B[2J\x1B[1;1H");
@@ -33,7 +33,7 @@ fn main() {
 
         clear_console();
         print!("{}", map);
-        std::thread::sleep(std::time::Duration::from_millis(100));
+        std::thread::sleep(std::time::Duration::from_millis(10));
 
         map.update();
     }
