@@ -3,3 +3,4 @@
 modules
 /android/
 game_export/
+.DS_Store
